@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Iransans' !important;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  background-color: #0d6efd;
+}
+
+#header .header-title span h2 {
+  font-family: 'Iransans';
+}
+
+#polls {
+  max-width: 800px;
+}
+
+#polls .poll-item {
+  background-color: #fff;
+  position: relative;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#polls .poll-item:hover {
+  -webkit-box-shadow: 3px 5px 10px rgba(175, 175, 175, 0.432);
+          box-shadow: 3px 5px 10px rgba(175, 175, 175, 0.432);
+  cursor: pointer;
+}
+
+#polls .poll-item .poll-number {
+  position: absolute;
+  top: 12px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px dotted #0d6efd;
+  background: #fff;
+  color: #000;
+}
+
+#polls .poll-item .poll-title {
+  margin-right: 2.5rem;
+  color: #333 !important;
+}
+
+#polls .poll-item .poll-comments {
+  font-size: 0.8rem;
+}
+
+#footer .footer-wrapper {
+  color: #fff;
+}
+
+#footer .footer-wrapper .footer-socials ul {
+  list-style: none;
+}
+
+#footer .footer-wrapper .footer-socials ul li {
+  float: left;
+}
+
+#footer .footer-wrapper .footer-socials ul li a {
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#footer .footer-wrapper .footer-socials ul li a:hover {
+  color: #a77d0b;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+$primary: #0d6efd;
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Iransans' !important;
+   direction: rtl;
+}
+
+a {
+   text-decoration: none;
+}
+
+#header {
+   background-color: $primary;
+   .header-title {
+      span {
+         h2 {
+            font-family: 'Iransans';
+         }
+      }
+   }
+}
+
+#polls {
+   max-width: 800px;
+   .poll-item {
+      background-color: #fff;
+      position: relative;
+      border-radius: 7px;
+      transition: all 0.3s ease;
+
+      &:hover {
+         box-shadow: 3px 5px 10px rgba(175, 175, 175, 0.432);
+         cursor: pointer;
+      }
+
+      .poll-number {
+         position: absolute;
+         top: 12px;
+         right: -25px;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         border: 2px dotted $primary;
+         background: #fff;
+         color: #000;
+      }
+
+      .poll-title {
+         margin-right: 2.5rem;
+         color: #333 !important;
+      }
+
+      .poll-comments {
+         font-size: 0.8rem;
+      }
+   }
+}
+
+#footer {
+   .footer-wrapper {
+      color: #fff;
+
+      .footer-socials {
+         ul {
+            list-style: none;
+            li {
+               float: left;
+               a {
+                  color: #fff;
+                  transition: all 0.3s ease;
+
+                  &:hover {
+                     color: rgb(167, 125, 11);
+                  }
+               }
+            }
+         }
+      }
+   }
+}
