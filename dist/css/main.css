@@ -25,8 +25,8 @@ a {
 }
 
 #polls .poll-item {
-  background-color: #fff;
   position: relative;
+  background-color: #fff;
   border-radius: 7px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -57,6 +57,7 @@ a {
 
 #polls .poll-item .poll-comments {
   font-size: 0.8rem;
+  color: #000;
 }
 
 #footer .footer-wrapper {
