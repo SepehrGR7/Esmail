@@ -1,0 +1,104 @@
+$primary: #0d6efd;
+$success: rgb(19, 163, 26);
+$default: rgb(61, 61, 61);
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Iransans' !important;
+   direction: rtl;
+   background: $primary;
+}
+
+a {
+   text-decoration: none;
+}
+
+p {
+   margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+#header {
+   .header-title {
+      span {
+         h2 {
+            font-family: 'Iransans';
+         }
+      }
+   }
+}
+
+// Login Page
+.login {
+   &-container {
+      max-width: 500px;
+      height: 500px;
+      margin: 2.5rem auto;
+      box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.377);
+      border-radius: 10px;
+      background: #fff;
+
+      .login-header {
+         margin-bottom: 2rem;
+         color: $default;
+      }
+
+      .login-form {
+         // margin: 4rem 0;
+         .form-input {
+            margin: 2rem 0;
+            padding: 0.5rem 2rem;
+            border: none;
+            border-bottom: 2px solid $primary;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+         }
+
+         .form-btn {
+            border-radius: 5px;
+            padding: 0.25rem 3rem;
+            margin-top: 1.5rem !important;
+            background: $primary !important;
+            color: #fff;
+            padding: 0.45rem 3rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+               border: 1px solid $primary;
+               background: #fff !important;
+               color: $primary;
+            }
+         }
+
+         .input-icon {
+            color: $primary;
+         }
+      }
+
+      .login-forget {
+         margin-top: 4.5rem;
+         left: 202px;
+         font-size: 0.9rem;
+         color: $default;
+
+         a {
+            color: $primary !important;
+
+            &:hover {
+               color: #122f8f !important;
+            }
+         }
+      }
+   }
+}

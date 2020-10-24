@@ -12,6 +12,23 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.selected-answer {
+  background-color: #13a31a;
+}
+
 #header {
   background-color: #0d6efd;
 }
@@ -45,9 +62,8 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px dotted #0d6efd;
-  background: #fff;
-  color: #000;
+  background: #0d6efd;
+  color: #fff;
 }
 
 #polls .poll-item .poll-title {
@@ -58,6 +74,87 @@ a {
 #polls .poll-item .poll-comments {
   font-size: 0.8rem;
   color: #000;
+}
+
+.question-header {
+  max-width: 1000px;
+}
+
+.question-header .question-number {
+  height: 70px;
+  width: 70px;
+  background: #fff;
+  border: 2px dotted #0d6efd;
+  color: #3d3d3d;
+  border-radius: 50%;
+}
+
+.question-header .question-number p {
+  font-size: 1.5rem;
+}
+
+.question-title {
+  color: #3d3d3d;
+}
+
+.question-date {
+  font-size: 0.7rem;
+  color: #3d3d3d;
+}
+
+.question-divider {
+  max-width: 1000px;
+  height: 1px;
+  width: 100%;
+  background: #0d6efd;
+  margin: 0.5rem auto;
+}
+
+.question-answers {
+  max-width: 800px;
+}
+
+.question-answers .answer-container {
+  position: relative;
+  border: 1px solid #0d6efd;
+  border-radius: 12px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.question-answers .answer-container:hover {
+  -webkit-box-shadow: 2px 4px 20px rgba(175, 175, 175, 0.432);
+          box-shadow: 2px 4px 20px rgba(175, 175, 175, 0.432);
+  cursor: pointer;
+}
+
+.question-answers .answer-container .answer-number {
+  position: absolute;
+  top: 12px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: #fff;
+}
+
+.question-answers .answer-container .answer-title {
+  margin-right: 1rem;
+  color: #333 !important;
+}
+
+.question-answers .answer-container .submit-answer .submit-buttons .btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.question-answers .answer-container .submit-answer .submit-buttons .submit-btn {
+  border-radius: 20px !important;
+}
+
+#footer {
+  background: #0d6efd;
 }
 
 #footer .footer-wrapper {
@@ -79,6 +176,6 @@ a {
 }
 
 #footer .footer-wrapper .footer-socials ul li a:hover {
-  color: #a77d0b;
+  color: #1c0696;
 }
 /*# sourceMappingURL=main.css.map */

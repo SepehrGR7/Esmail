@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Iransans' !important;
+  direction: rtl;
+  background: #0d6efd;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+#header .header-title span h2 {
+  font-family: 'Iransans';
+}
+
+.login-container {
+  max-width: 500px;
+  height: 500px;
+  margin: 2.5rem auto;
+  -webkit-box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.377);
+          box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.377);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.login-container .login-header {
+  margin-bottom: 2rem;
+  color: #3d3d3d;
+}
+
+.login-container .login-form .form-input {
+  margin: 2rem 0;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-bottom: 2px solid #0d6efd;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.login-container .login-form .form-btn {
+  border-radius: 5px;
+  padding: 0.25rem 3rem;
+  margin-top: 1.5rem !important;
+  background: #0d6efd !important;
+  color: #fff;
+  padding: 0.45rem 3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.login-container .login-form .form-btn:hover {
+  border: 1px solid #0d6efd;
+  background: #fff !important;
+  color: #0d6efd;
+}
+
+.login-container .login-form .input-icon {
+  color: #0d6efd;
+}
+
+.login-container .login-forget {
+  margin-top: 4.5rem;
+  left: 202px;
+  font-size: 0.9rem;
+  color: #3d3d3d;
+}
+
+.login-container .login-forget a {
+  color: #0d6efd !important;
+}
+
+.login-container .login-forget a:hover {
+  color: #122f8f !important;
+}
+/*# sourceMappingURL=login.css.map */

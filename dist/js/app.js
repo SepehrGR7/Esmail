@@ -1,14 +1,18 @@
-const persianNumbers = [/۰/g, /۱/g, /۲/g, /۳/g, /۴/g, /۵/g, /۶/g, /۷/g, /۸/g, /۹/g];
-
-fixNumbers = function (str) {
-   for (var i = 0; i < 10; i++) {
-      str = str.replace(persianNumbers[i], i);
-   }
-   return str;
+const selectAnswer = (e) => {
+   const children = e.target.children;
+   children[2].checked = true;
 };
 
-const par = document.querySelectorAll('.poll-number p');
-par.forEach((text) => {
-   let newText = fixNumbers(text.innerText);
-   text.innerText = newText;
+const deleteAnswer = () => {
+   const asnwers = document.querySelectorAll('.answer-container');
+   asnwers.forEach((answer) => {
+      answer.children[2].checked = false;
+   });
+};
+
+const asnwers = document.querySelectorAll('.answer-container');
+asnwers.forEach((answer) => {
+   answer.addEventListener('click', selectAnswer);
 });
+
+document.querySelector('.delete-btn').addEventListener('click', deleteAnswer);
