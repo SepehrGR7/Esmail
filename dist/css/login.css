@@ -26,6 +26,22 @@ h6 {
   margin: 0;
 }
 
+.form-btn {
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem !important;
+  background: #0d6efd !important;
+  color: #fff;
+  padding: 0.45rem 3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form-btn:hover {
+  border: 1px solid #0d6efd;
+  background: #fff !important;
+  color: #0d6efd;
+}
+
 #header .header-title span h2 {
   font-family: 'Iransans';
 }
@@ -46,7 +62,7 @@ h6 {
 }
 
 .login-container .login-form .form-input {
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0.5rem 2rem;
   border: none;
   border-bottom: 2px solid #0d6efd;
@@ -54,31 +70,29 @@ h6 {
   border-bottom-left-radius: 0;
 }
 
-.login-container .login-form .form-btn {
-  border-radius: 5px;
-  padding: 0.25rem 3rem;
-  margin-top: 1.5rem !important;
-  background: #0d6efd !important;
-  color: #fff;
-  padding: 0.45rem 3rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.login-container .login-form .form-btn:hover {
-  border: 1px solid #0d6efd;
-  background: #fff !important;
-  color: #0d6efd;
-}
-
 .login-container .login-form .input-icon {
   color: #0d6efd;
 }
 
+.login-container .login-form .form-btn {
+  margin-top: 1.5rem;
+}
+
+.login-container .create-account {
+  margin-top: 2rem;
+}
+
+.login-container .create-account p {
+  margin-bottom: 0.5rem !important;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .login-container .login-forget {
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   left: 202px;
-  font-size: 0.9rem;
+  font-size: 15px;
+  font-weight: 300;
   color: #3d3d3d;
 }
 
@@ -88,5 +102,54 @@ h6 {
 
 .login-container .login-forget a:hover {
   color: #122f8f !important;
+}
+
+.signup-container {
+  max-width: 500px;
+  height: 500px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  -webkit-box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.377);
+          box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.377);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.signup-container .signup-header {
+  margin-bottom: 1rem;
+  color: #3d3d3d;
+}
+
+.signup-container .signup-form .form-input {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-bottom: 2px solid #0d6efd;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.signup-container .signup-form .input-icon {
+  color: #0d6efd;
+}
+
+.signup-container .signup-form .form-btn {
+  margin-top: 1rem;
+}
+
+.signup-container .error {
+  padding: 0.5rem 1rem;
+  background: #e2561e;
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.signup-container .input-error {
+  border-bottom: 2px solid #e2561e !important;
+}
+
+.signup-container .input-icon-error {
+  color: #e2561e !important;
 }
 /*# sourceMappingURL=login.css.map */

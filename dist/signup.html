@@ -36,29 +36,48 @@
          </div>
       </header>
 
-      <!-- Login -->
-      <section class="login">
-         <div class="login-container container mx-auto p-5">
-            <div class="login-header text-center">
-               <h4>وارد حساب کاربری خود شوید</h4>
+      <!-- Signup -->
+      <section class="signup">
+         <div class="signup-container container mx-auto">
+            <div class="signup-header text-center">
+               <h4>ایجاد حساب کاربری جدید</h4>
             </div>
-            <form class="login-form">
+            <div class="error"></div>
+            <form class="signup-form" name="signup-form">
                <div class="row">
-                  <label for="name" class="col-1 col-form-label d-flex justify-content-center align-items-center">
+                  <label for="userName" class="col-1 col-form-label d-flex justify-content-center align-items-center">
                      <i class="fas fa-user input-icon" data-fa-transform="grow-2 left-42 up-1" style="z-index: 2"></i>
                   </label>
                   <div class="col-10">
                      <input
                         type="text"
-                        name="name"
-                        id="name"
+                        name="userName"
+                        id="userName"
                         placeholder="نام کاربری"
-                        class="form-input form-control shadow-none"
+                        class="form-input signup-input form-control shadow-none"
                      />
                   </div>
                </div>
                <div class="row">
-                  <label for="name" class="col-1 col-form-label d-flex justify-content-center align-items-center">
+                  <label for="email" class="col-1 col-form-label d-flex justify-content-center align-items-center">
+                     <i
+                        class="fas fa-envelope input-icon"
+                        data-fa-transform="grow-2 left-42 up-1"
+                        style="z-index: 2"
+                     ></i>
+                  </label>
+                  <div class="col-10">
+                     <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="ایمیل"
+                        class="form-input signup-input form-control shadow-none"
+                     />
+                  </div>
+               </div>
+               <div class="row">
+                  <label for="password" class="col-1 col-form-label d-flex justify-content-center align-items-center">
                      <i class="fas fa-key input-icon" data-fa-transform="grow-2 left-42 up-1" style="z-index: 2"></i>
                   </label>
                   <div class="col-10">
@@ -67,19 +86,31 @@
                         name="password"
                         id="password"
                         placeholder="رمز عبور"
-                        class="form-input form-control shadow-none"
+                        class="form-input signup-input form-control shadow-none"
                      />
                   </div>
                </div>
-               <button class="form-btn btn d-block mx-auto" type="submit">ورود</button>
+               <div class="row">
+                  <label
+                     for="confrimPassword"
+                     class="col-1 col-form-label d-flex justify-content-center align-items-center"
+                  >
+                     <i class="fas fa-key input-icon" data-fa-transform="grow-2 left-42 up-1" style="z-index: 2"></i>
+                  </label>
+                  <div class="col-10">
+                     <input
+                        type="password"
+                        name="confirmPassword"
+                        id="confirmPassword"
+                        placeholder="تکرار رمز عبور"
+                        class="form-input signup-input form-control shadow-none"
+                     />
+                  </div>
+               </div>
+               <button class="signup-btn form-btn btn shadow-none d-block mx-auto" type="submit">
+                  ایجاد حساب کاربری
+               </button>
             </form>
-            <div class="create-account text-center">
-               <p>حساب کاربری ندارید ؟</p>
-               <a href="signup.html" class="form-btn btn">ایجاد حساب کاربری</a>
-            </div>
-            <div class="login-forget text-center">
-               <span>رمز عبور خود را فراموش کرده اید؟<a href="#"> بازیابی رمز عبور </a></span>
-            </div>
          </div>
       </section>
 

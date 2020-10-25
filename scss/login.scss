@@ -1,6 +1,7 @@
 $primary: #0d6efd;
 $success: rgb(19, 163, 26);
 $default: rgb(61, 61, 61);
+$danger: rgb(226, 86, 30);
 
 * {
    box-sizing: border-box;
@@ -27,6 +28,21 @@ h4,
 h5,
 h6 {
    margin: 0;
+}
+
+.form-btn {
+   border-radius: 5px;
+   padding: 0.5rem 2.5rem !important;
+   background: $primary !important;
+   color: #fff;
+   padding: 0.45rem 3rem;
+   transition: all 0.3s ease;
+
+   &:hover {
+      border: 1px solid $primary;
+      background: #fff !important;
+      color: $primary;
+   }
 }
 
 #header {
@@ -57,7 +73,7 @@ h6 {
       .login-form {
          // margin: 4rem 0;
          .form-input {
-            margin: 2rem 0;
+            margin: 1rem 0;
             padding: 0.5rem 2rem;
             border: none;
             border-bottom: 2px solid $primary;
@@ -65,31 +81,30 @@ h6 {
             border-bottom-left-radius: 0;
          }
 
-         .form-btn {
-            border-radius: 5px;
-            padding: 0.25rem 3rem;
-            margin-top: 1.5rem !important;
-            background: $primary !important;
-            color: #fff;
-            padding: 0.45rem 3rem;
-            transition: all 0.3s ease;
-
-            &:hover {
-               border: 1px solid $primary;
-               background: #fff !important;
-               color: $primary;
-            }
-         }
-
          .input-icon {
             color: $primary;
+         }
+
+         .form-btn {
+            margin-top: 1.5rem;
+         }
+      }
+
+      .create-account {
+         margin-top: 2rem;
+
+         p {
+            margin-bottom: 0.5rem !important;
+            font-size: 15px;
+            font-weight: 300;
          }
       }
 
       .login-forget {
-         margin-top: 4.5rem;
+         margin-top: 2.5rem;
          left: 202px;
-         font-size: 0.9rem;
+         font-size: 15px;
+         font-weight: 300;
          color: $default;
 
          a {
@@ -99,6 +114,59 @@ h6 {
                color: #122f8f !important;
             }
          }
+      }
+   }
+}
+
+// Signup Page
+.signup {
+   &-container {
+      max-width: 500px;
+      height: 500px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.377);
+      border-radius: 10px;
+      background: #fff;
+
+      .signup-header {
+         margin-bottom: 1rem;
+         color: $default;
+      }
+
+      .signup-form {
+         .form-input {
+            margin: 1rem 0;
+            padding: 0.5rem 2rem;
+            border: none;
+            border-bottom: 2px solid $primary;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+         }
+
+         .input-icon {
+            color: $primary;
+         }
+
+         .form-btn {
+            margin-top: 1rem;
+         }
+      }
+
+      .error {
+         padding: 0.5rem 1rem;
+         background: rgb(226, 86, 30);
+         color: #fff;
+         border-radius: 5px;
+         display: none;
+      }
+
+      .input-error {
+         border-bottom: 2px solid $danger !important;
+      }
+
+      .input-icon-error {
+         color: $danger !important;
       }
    }
 }
