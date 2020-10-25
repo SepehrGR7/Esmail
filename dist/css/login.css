@@ -42,7 +42,15 @@ h6 {
   color: #0d6efd;
 }
 
-#header .header-title span h2 {
+#header {
+  background-color: #0d6efd;
+}
+
+#header .header-title a {
+  color: #fff !important;
+}
+
+#header .header-title a h2 {
   font-family: 'Iransans';
 }
 

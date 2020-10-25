@@ -33,7 +33,11 @@ h6 {
   background-color: #0d6efd;
 }
 
-#header .header-title span h2 {
+#header .header-title a {
+  color: #fff !important;
+}
+
+#header .header-title a h2 {
   font-family: 'Iransans';
 }
 

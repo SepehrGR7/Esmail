@@ -35,7 +35,8 @@ h6 {
 #header {
    background-color: $primary;
    .header-title {
-      span {
+      a {
+         color: #fff !important;
          h2 {
             font-family: 'Iransans';
          }
